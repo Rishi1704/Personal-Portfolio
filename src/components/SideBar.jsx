@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import { SlideRight } from './slide-right'
 import { motion } from 'framer-motion'
 import { navLinks } from '../constants'
 
 const SideBar = () => {
-  const [active, setActive] = useState("");
   
   return (
     <motion.div 
@@ -25,7 +24,6 @@ const SideBar = () => {
         <span className='flex flex-shrink-0 h-[45px] w-[45px] items-center justify-center my-[12.5px]'>
           <Link to={'/'}
             onClick={() => {
-              setActive("");
               window.scrollTo(0, 0);
             }}
           >
@@ -38,8 +36,7 @@ const SideBar = () => {
         {navLinks.map((link) => (
           <SlideRight 
             delay={link.delay}
-            key={link.id}
-            onClick={() => setActive(link.title)}>
+            key={link.id}>
             <Link 
               to={`#${link.id}`} 
               className='w-full'>
