@@ -29,14 +29,17 @@ import {
     {
       id: "about",
       title: "About",
+      delay: "0.25",
     },
     {
       id: "work",
       title: "Work",
+      delay: "0.5",
     },
     {
       id: "contact",
       title: "Contact",
+      delay: "0.75",
     },
   ];
   

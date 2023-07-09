@@ -2,6 +2,11 @@
 
 @tailwind base;
 @tailwind components;
+
+.sidebar-ul {
+  @apply h-[100px] flex flex-shrink-0 vertical-lr items-center justify-center opacity-50 hover:opacity-100 border-l-[1px] border-solid border-transparent w-full hover:bg-[#111] hover:border-[#0aff9d] rotate-180 tracking-widest
+}
+
 @tailwind utilities;
 
 * {
