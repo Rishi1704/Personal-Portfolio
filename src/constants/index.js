@@ -8,13 +8,16 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
+    unity,
+    unreal,
+    autocad,
+    cpp,
+    cHash,
+    python,
     udghosh,
     iitk,
     vizuara,
@@ -64,6 +67,26 @@ import {
   
   const technologies = [
     {
+      name: "Unity",
+      icon: unity,
+    },
+    {
+      name: "Unreal",
+      icon: unreal,
+    },
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "C#",
+      icon: cHash,
+    },
+    {
       name: "HTML 5",
       icon: html,
     },
@@ -82,10 +105,6 @@ import {
     {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -108,12 +127,8 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
+      name: "AutoCAD",
+      icon: autocad,
     },
   ];
   
