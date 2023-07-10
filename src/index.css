@@ -38,13 +38,13 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.neon-green-gradient {
+  background: #0aff9d;
+  background: linear-gradient(-90deg, #0aff9d 0%, rgba(51, 80, 60, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
+    #0aff9d 0%,
+    rgba(51, 80, 60, 0) 100%
   );
 }
 
