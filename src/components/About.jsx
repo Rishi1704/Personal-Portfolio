@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { styles } from '../style'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
+import { Reveal } from './Animations/reveal'
 import { SectionWrapper } from '../hoc'
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -23,7 +24,9 @@ const ServiceCard = ({ index, title, icon }) => {
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
         >
           <img src={icon} alt={title} className='w-16 h-16 object-contain' />
-          <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          <Reveal delay={0.25 * index}>
+            <h3 className='text-white text-[20px] font-bold text-center'>{title}</h3>
+          </Reveal>
         </div>
       </motion.div>
     </Tilt>
@@ -34,15 +37,21 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
+        <Reveal>
+          <p className={`${styles.sectionSubText}`}>Introduction</p>
+        </Reveal>
+        <Reveal>
+          <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
+        </Reveal>
       </motion.div>
 
-      <motion.p 
+      <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis earum, quas ea obcaecati eligendi asperiores ipsa placeat non molestiae corporis minima modi! Quod, odit. Ea harum ipsam sed sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem modi odit ea accusantium quos sunt rerum tempora recusandae voluptate maxime incidunt at placeat harum vitae tempore quibusdam, similique soluta. 
+        <Reveal>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis earum, quas ea obcaecati eligendi asperiores ipsa placeat non molestiae corporis minima modi! Quod, odit. Ea harum ipsam sed sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem modi odit ea accusantium quos sunt rerum tempora recusandae voluptate maxime incidunt at placeat harum vitae tempore quibusdam, similique soluta.
+        </Reveal>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
