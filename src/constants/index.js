@@ -82,10 +82,10 @@ import {
       name: "Python",
       icon: python,
     },
-    {
-      name: "C#",
-      icon: cHash,
-    },
+    // {
+    //   name: "C#",
+    //   icon: cHash,
+    // },
     {
       name: "HTML 5",
       icon: html,
