@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
-import { SlideBottom } from './slide-bottom'
+import { SlideBottom } from './Animations/slide-bottom'
 import { motion } from 'framer-motion'
 
 const Navbar = () => {

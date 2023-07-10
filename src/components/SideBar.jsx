@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { SlideRight } from './slide-right'
+import { SlideRight } from './Animations/slide-right'
 import { motion } from 'framer-motion'
 import { navLinks } from '../constants'
 
