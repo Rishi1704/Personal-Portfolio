@@ -1,16 +1,15 @@
-import React from 'react'
-import { Tilt } from 'react-tilt'
-import { motion } from 'framer-motion'
+import React from "react";
+import Tilt from "react-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from '../style'
-import { services } from '../constants'
-import { fadeIn, textVariant } from '../utils/motion'
-import { Reveal } from './Animations/reveal'
-import { SectionWrapper } from '../hoc'
+import { styles } from "../styles";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
+import { Reveal } from "./Animations/reveal";
 
-const ServiceCard = ({ index, title, icon }) => {
-  return (
-    <Tilt className='xs:w-[250px] w-full'>
+const ServiceCard = ({ index, title, icon }) => (
+  <Tilt className='xs:w-[250px] w-full'>
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -30,8 +29,7 @@ const ServiceCard = ({ index, title, icon }) => {
         </div>
       </motion.div>
     </Tilt>
-  )
-}
+);
 
 const About = () => {
   return (
@@ -50,7 +48,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
         <Reveal>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae perspiciatis earum, quas ea obcaecati eligendi asperiores ipsa placeat non molestiae corporis minima modi! Quod, odit. Ea harum ipsam sed sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem modi odit ea accusantium quos sunt rerum tempora recusandae voluptate maxime incidunt at placeat harum vitae tempore quibusdam, similique soluta.
+          I am Rishi Agrawal, a Third Year UnderGraduate of Mechanical Engineering from Indian Institute of Technology Kanpur. I have a great experience in feild like Game Development, Software Development, Web Development and many more. I have a good grasp over programming lagguages like C++, C, C#, javaScript, etc. and frameworks for development like React.Js, Three.Js, Node.Js, MongoDB, etc. I had worked on Game Engines such as Unreal and Unity to make robust and high quality games. Besides my Academics and Technical experties, I am a part of the Institutes Hockey Team and played several Tournaments like Udghosh.
         </Reveal>
       </motion.p>
 
@@ -60,7 +58,7 @@ const About = () => {
         ))}
       </div>
     </>
-  )
-}
+  );
+};
 
 export default SectionWrapper(About, "about");

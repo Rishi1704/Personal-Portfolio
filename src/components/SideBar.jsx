@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { SlideRight } from './Animations/slide-right'
 import { motion } from 'framer-motion'
@@ -8,7 +8,7 @@ const SideBar = () => {
   
   return (
     <motion.div 
-      className='cursor-auto pointer-events-auto text-white text-lg font-extralight'
+      className='cursor-auto pointer-events-auto text-white text-lg font-extralight xs:block hidden'
       variants={{
         hidden: { translateX: "-70px" },
         visible: { translateX: "0px" }
@@ -22,7 +22,7 @@ const SideBar = () => {
     >
       <div className='h-screen sticky left-0 top-0 bg-[#080808] z-[100] flex flex-col items-center overflow-y-hidden'>
         <span className='flex flex-shrink-0 h-[45px] w-[45px] items-center justify-center my-[12.5px]'>
-          <Link to={'/'}
+          <Link to={'/~rishira21/'}
             onClick={() => {
               window.scrollTo(0, 0);
             }}
@@ -37,13 +37,13 @@ const SideBar = () => {
           <SlideRight 
             delay={link.delay}
             key={link.id}>
-            <Link 
-              to={`#${link.id}`} 
+            <a
+              href={`#${link.id}`} 
               className='w-full'>
               <div className='sidebar-ul'>
                 {link.title}
               </div>
-            </Link>
+            </a>
           </SlideRight>
         ))}
       </div>

@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Hero, Navbar, Tech, StarsCanvas, SideBar } from './components'
+import { About, Contact, Experience, Hero, Navbar, Tech, StarsCanvas, SideBar, CopyWrite } from './components'
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relativ z-0 bg-primary">
-        <div className="grid grid-cols-[60px_1fr]">
+        <div className="xs:grid xs:grid-cols-[60px_1fr]">
           <SideBar />
           <div>
             <Navbar />
@@ -18,6 +18,7 @@ const App = () => {
               <Contact />
               <StarsCanvas />
             </div>
+            <CopyWrite />
           </div>
         </div>
       </div>

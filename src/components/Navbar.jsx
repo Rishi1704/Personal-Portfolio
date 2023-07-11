@@ -27,7 +27,7 @@ const Navbar = () => {
             <ul className='h-full grid grid-cols-[repeat(5,1fr)] justify-center items-center'>
               <SlideBottom delay={0.25}>
                 <li className='px-2 sm:px-3 text-[15px] sm:text-[20px] hover:scale-125 transition-all duration-300 flex justify-center'>
-                  <Link to={"https://www.instagram.com/gamedev_iitk/"} target={'_blank'} rel="noreferrer">
+                  <Link to={"https://www.instagram.com/rishi_agrawal_1704/"} target={'_blank'} rel="noreferrer">
                     <FaInstagram className='hover:text-[#0aff9d] text-[#ebecf3] opacity-50 hover:opacity-100' />
                   </Link>
                 </li>
@@ -35,7 +35,7 @@ const Navbar = () => {
 
               <SlideBottom delay={0.5}>
                 <li className='px-2 sm:px-3 text-[15px] sm:text-[20px] hover:scale-125 transition-all duration-300 flex justify-center'>
-                  <Link to={"https://www.facebook.com/gamedev.iitk"} target={'_blank'} rel="noreferrer">
+                  <Link to={"https://www.facebook.com/rishi.agrawal.332"} target={'_blank'} rel="noreferrer">
                     <FaFacebook className='hover:text-[#0aff9d] text-[#ebecf3] opacity-50 hover:opacity-100' />
                   </Link>
                 </li>
@@ -43,7 +43,7 @@ const Navbar = () => {
 
               <SlideBottom delay={0.75}>
                 <li className='px-2 sm:px-3 text-[15px] sm:text-[20px] hover:scale-125 transition-all duration-300 flex justify-center'>
-                  <Link to={"https://www.linkedin.com/company/studio-centauri/"} target={'_blank'} rel="noreferrer">
+                  <Link to={"https://www.linkedin.com/in/rishi-rakesh-agrawal/"} target={'_blank'} rel="noreferrer">
                     <FaLinkedin className='hover:text-[#0aff9d] text-[#ebecf3] opacity-50 hover:opacity-100' />
                   </Link>
                 </li>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
               <SlideBottom delay={1}>
                 <li className='px-2 sm:px-3 text-[15px] sm:text-[20px] hover:scale-125 transition-all duration-300 flex justify-center'>
-                  <Link to={"https://github.com/studiocentauri"} target={'_blank'} rel="noreferrer">
+                  <Link to={"https://github.com/Rishi1704"} target={'_blank'} rel="noreferrer">
                     <FaGithub className='hover:text-[#0aff9d] text-[#ebecf3] opacity-50 hover:opacity-100' />
                   </Link>
                 </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
               <SlideBottom delay={1.25}>
                 <li className='px-2 sm:px-3 text-[15px] sm:text-[20px] hover:scale-125 transition-all duration-300 flex justify-center'>
-                  <Link to={"mailto:gamedeviitk@gmail.com"} target={'_blank'} rel="noreferrer">
+                  <Link to={"mailto:rishira21@iitk.ac.in"} target={'_blank'} rel="noreferrer">
                     <SiGmail className='hover:text-[#0aff9d] text-[#ebecf3] opacity-50 hover:opacity-100' />
                   </Link>
                 </li>
@@ -67,7 +67,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <Link to={"/resume.pdf"}>
+          <Link to={"/~rishira21/resume.pdf"}>
             <SlideBottom delay={0.25}>
               <div className='relative overflow-hidden h-full w-full border-solid border-[1px] border-[#0aff9d] rounded text-lg tracking-wider font-normal px-2 xs:px-4 sm:px-8 py-1 flex justify-center items-center transition-all duration-300 text-[#0aff9d] before:absolute before:-z-10 before:h-full before:rounded before:w-full before:right-full before:bottom-full before:bg-[#0aff9d] before:transition-all before:ease-linear before:duration-[200ms] before:delay-0 hover:before:right-0 hover:before:bottom-0 hover:text-white'>
                 Resume

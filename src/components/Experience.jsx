@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import "react-vertical-timeline-component/style.min.css";
 
-import { styles } from "../style";
+import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
@@ -64,7 +64,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div
+      <motion.div 
         variants={textVariant()}
         initial='hidden'
         whileInView='show'
@@ -72,12 +72,12 @@ const Experience = () => {
         className="flex items-center flex-col"
       >
         <Reveal>
-          <p className={`${styles.sectionSubText} text-center m-auto`}>
+          <p className={`${styles.sectionSubText} text-center`}>
             What I have done so far
           </p>
         </Reveal>
         <Reveal>
-          <h2 className={`${styles.sectionHeadText} text-center m-auto`}>
+          <h2 className={`${styles.sectionHeadText} text-center`}>
             Work Experience.
           </h2>
         </Reveal>
