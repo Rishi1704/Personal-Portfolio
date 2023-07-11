@@ -5,8 +5,8 @@ import {
     web,
     javascript,
     typescript,
-    html,
-    css,
+    // html,
+    // css,
     reactjs,
     tailwind,
     nodejs,
@@ -16,15 +16,15 @@ import {
     unreal,
     autocad,
     cpp,
-    cHash,
+    // cHash,
     python,
     udghosh,
     iitk,
     vizuara,
     gdc,
-    carrent,
-    jobit,
-    tripguide,
+    // carrent,
+    // jobit,
+    // tripguide,
     threejs,
   } from "../assets";
   
@@ -86,14 +86,14 @@ import {
     //   name: "C#",
     //   icon: cHash,
     // },
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
+    // {
+    //   name: "CSS 3",
+    //   icon: css,
+    // },
     {
       name: "JavaScript",
       icon: javascript,
@@ -237,7 +237,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      // image: carrent,
       source_code_link: "https://github.com/",
     },
     {
@@ -258,7 +258,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      // image: jobit,
       source_code_link: "https://github.com/",
     },
     {
@@ -279,7 +279,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      // image: tripguide,
       source_code_link: "https://github.com/",
     },
   ];

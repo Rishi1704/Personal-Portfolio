@@ -4,9 +4,9 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 
-import css from "./tech/css.png";
+// import css from "./tech/css.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
+// import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -15,7 +15,7 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import cpp from './tech/cpp.png';
-import cHash from './tech/c-hash.png';
+// import cHash from './tech/c-hash.png';
 import autocad from './tech/autocad.png';
 import unity from './tech/unity.png';
 import unreal from './tech/unreal.png';
@@ -26,9 +26,9 @@ import gdc from "./company/gdc.png";
 import iitk from "./company/iitk.png";
 import vizuara from "./company/vizuara.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// import carrent from "./carrent.png";
+// import jobit from "./jobit.png";
+// import tripguide from "./tripguide.png";
 
 export {
   backend,
@@ -36,9 +36,9 @@ export {
   mobile,
   web,
   github,
-  css,
+  // css,
   git,
-  html,
+  // html,
   javascript,
   mongodb,
   nodejs,
@@ -47,7 +47,7 @@ export {
   typescript,
   threejs,
   cpp,
-  cHash,
+  // cHash,
   autocad,
   unity,
   unreal,
@@ -56,7 +56,7 @@ export {
   gdc,
   iitk,
   vizuara,
-  carrent,
-  jobit,
-  tripguide,
+  // carrent,
+  // jobit,
+  // tripguide,
 };
