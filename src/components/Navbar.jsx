@@ -67,13 +67,13 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <Link to={"/~rishira21/resume.pdf"}>
+          <a href={"https://home.iitk.ac.in/~rishira21/resume.pdf"}>
             <SlideBottom delay={0.25}>
               <div className='relative overflow-hidden h-full w-full border-solid border-[1px] border-[#0aff9d] rounded text-lg tracking-wider font-normal px-2 xs:px-4 sm:px-8 py-1 flex justify-center items-center transition-all duration-300 text-[#0aff9d] before:absolute before:-z-10 before:h-full before:rounded before:w-full before:right-full before:bottom-full before:bg-[#0aff9d] before:transition-all before:ease-linear before:duration-[200ms] before:delay-0 hover:before:right-0 hover:before:bottom-0 hover:text-white'>
                 Resume
               </div>
             </SlideBottom>
-          </Link>
+          </a>
         </nav>
       </motion.div>
     </>
