@@ -1,11 +1,12 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
+import { Typewriter } from "react-simple-typewriter";
 
-import { styles } from '../style'
-import { ComputersCanvas } from './canvas'
+import { styles } from "../styles";
+import { ComputersCanvas } from "./canvas";
 import { Reveal } from './Animations/reveal'
 
 const Hero = () => {
+  
   return (
     <section className='relative w-full h-screen mx-auto translate-y-[-70px] bg-hero-pattern bg-cover bg-no-repeat bg-center'>
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-auto items-start gap-5`}>
@@ -19,25 +20,34 @@ const Hero = () => {
             <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#0aff9d]'>Rishi</span>.</h1>
           </Reveal>
           <Reveal>
-            <p className={`${styles.heroSubText} mt-2 text-while-100`}>I a Full Stack Game Developer, a Programmer,
-              <br className='sm:block hidden' />a Frontend Web Developer and a Hockey Player</p>
+            <p className={`${styles.heroSubText} mt-2 text-while-100`}>
+              I'm a {' '}
+              <span className="text-[#0aff9d] font-bold">
+                <Typewriter 
+                  words={['Full Stack Game Developer', 'Programmer', 'Software Developer', 'Front End Developer', 'Hockey Player']}
+                  loop={false}
+                  cursor
+                  cursorStyle='_'
+                />
+              </span>
+            </p>
           </Reveal>
         </div>
       </div>
 
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-24 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.dev
+            <motion.div
               animate={{
-                y: [0, 24, 0]
+                y: [0, 24, 0],
               }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: 'loop'
+                repeatType: "loop",
               }}
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
@@ -45,7 +55,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
